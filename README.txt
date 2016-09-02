@@ -1,5 +1,15 @@
-SPECTRA[SolveLMI] - Solve Linear Matrix Inequalities
+SPECTRA - Semidefinite Programming solved Exactly with Computational Tools of Real Algebra
 
+Calling SPECTRA
+
+> maple;
+> with(SPECTRA);
+
+                                           [SolveLMI]
+
+--------------------------------------------------------------------------------------------------------------------
+
+SPECTRA[SolveLMI] - Solve Linear Matrix Inequalities
 
 
 Calling sequence
@@ -29,10 +39,10 @@ o if listofranks is not given or listofranks is the empty list, then by default 
 o if options is not given, or if it is the empty set, the output of SolveLMI is a vector x with A>=0 at x,
   if and only if such a point exists. Otherwise, the output is the empty list [].
   Possible options:
-        o rank   - outputs the rank of A at the solutions
+        o rnk   - outputs the rank of A at the solutions
         o deg    - outputs the algebraic degree of the solutions
         o rur    - outputs rational univariate representations of the solutions
-        o allpts - outputs all solutions. By default, that is if allpts is not in options,
+        o allpts - outputs all solutions. By default (if allpts is not in options)
 	           SolveLMI returns the first computed solution
         o regul  - outputs information about regularity assumptions
         o debg   - debugger for internal procedures
@@ -62,4 +72,3 @@ Examples
 
       4        2                  3                  2                   2                  2
     _Z  - 42 _Z  - 64 _Z + 105, _Z  - 21 _Z - 16, [_Z  + 16 _Z + 19, 2 _Z  + 8 _Z + 26, 4 _Z  + 4 _Z - 44]]
-# spectra
